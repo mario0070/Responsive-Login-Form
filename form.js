@@ -21,18 +21,18 @@ h2.addEventListener("click",()=>{
 
 var input=document.getElementsByTagName("input")
 var login=document.getElementById("login")
-var form=document.querySelector("form")
+var form1=document.getElementById("form1")
 var email=document.getElementById("email")
 var pass=document.getElementById("pass")
 
-form.onsubmit=()=>{
+form1.onsubmit=()=>{
     return false
 }
 
 login.onclick=()=>{
     if(input[0].value !== "" && input[1].value !==""){
       sp1.innerText="";
-      form.onsubmit=()=>{return true}
+      form1.onsubmit=()=>{return true}
 
     }
 
